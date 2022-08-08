@@ -667,7 +667,8 @@ public class HikariConfig implements HikariConfigMXBean
          if (!safeIsAssignableFrom(metricRegistry, "com.codahale.metrics.MetricRegistry")
              && !(safeIsAssignableFrom(metricRegistry, "io.dropwizard.metrics5.MetricRegistry"))
              && !(safeIsAssignableFrom(metricRegistry, "io.micrometer.core.instrument.MeterRegistry"))) {
-            throw new IllegalArgumentException("Class must be instance of com.codahale.metrics.MetricRegistry or io.micrometer.core.instrument.MeterRegistry");
+            throw new IllegalArgumentException("Class must be instance of com.codahale.metrics.MetricRegistry, " +
+               "io.dropwizard.metrics5.MetricRegistry, or io.micrometer.core.instrument.MeterRegistry");
          }
       }
 
