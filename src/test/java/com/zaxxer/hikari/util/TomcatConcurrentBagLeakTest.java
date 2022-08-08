@@ -19,6 +19,7 @@ package com.zaxxer.hikari.util;
 import com.zaxxer.hikari.pool.TestElf.FauxWebClassLoader;
 import com.zaxxer.hikari.util.ConcurrentBag.IConcurrentBagEntry;
 import org.junit.FixMethodOrder;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.slf4j.Logger;
@@ -41,6 +42,7 @@ import static org.junit.Assume.assumeTrue;
 /**
  * @author Brett Wooldridge
  */
+@Ignore
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TomcatConcurrentBagLeakTest
 {
